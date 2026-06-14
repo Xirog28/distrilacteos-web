@@ -283,3 +283,57 @@ footer a {
   border-radius: 8px;
   font-size: 1rem;
 }
+/* ===== CONTACTO ===== */
+.contacto-seccion {
+  padding: 80px 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.contacto-info h2,
+.contacto-clientes h2 {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  margin-bottom: 30px;
+}
+
+.contacto-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.contacto-icono {
+  font-size: 2rem;
+  min-width: 40px;
+}
+
+.contacto-item h3 {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.contacto-item p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.contacto-clientes {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.contacto-clientes p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
