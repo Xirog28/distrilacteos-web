@@ -1,0 +1,194 @@
+/* ===== RESET Y BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== NAVEGACIÓN ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #1a1a2e;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #e2b96f;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e2b96f;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 120px 60px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #e2b96f;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 8px;
+  transition: background-color 0.3s;
+  background-color: #e2b96f;
+  color: #1a1a2e;
+}
+
+.btn:hover {
+  background-color: #c9a055;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5a;
+}
+
+/* ===== CATEGORÍAS ===== */
+.categorias {
+  padding: 80px 60px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.categorias h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1a1a2e;
+}
+
+.categorias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.categoria-card {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-width: 160px;
+  transition: transform 0.3s;
+}
+
+.categoria-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== QUIÉNES SOMOS ===== */
+.quienes-somos {
+  padding: 80px 60px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.quienes-somos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+}
+
+.quienes-somos p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #1a1a2e;
+  color: #cccccc;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+footer a {
+  color: #25d366;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .categorias {
+    padding: 60px 20px;
+  }
+
+  .quienes-somos {
+    padding: 60px 20px;
+  }
+}

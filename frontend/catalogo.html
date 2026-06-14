@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo — Distrilacteos Las Cabañuelas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <nav>
+    <div class="nav-logo">Las Cabañuelas</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ENCABEZADO -->
+  <section class="page-header">
+    <h1>Catálogo de Productos</h1>
+    <p>Encuentra todo lo que necesitas para tu negocio o hogar</p>
+  </section>
+
+  <!-- FILTROS POR CATEGORÍA -->
+  <section class="filtros">
+    <button class="filtro-btn activo" data-categoria="todos">Todos</button>
+    <button class="filtro-btn" data-categoria="lacteos">🧀 Lácteos</button>
+    <button class="filtro-btn" data-categoria="embutidos">🥩 Embutidos</button>
+    <button class="filtro-btn" data-categoria="congelados">🧊 Congelados</button>
+    <button class="filtro-btn" data-categoria="salsas">🍯 Salsas</button>
+    <button class="filtro-btn" data-categoria="dulces">🍫 Dulces</button>
+  </section>
+
+  <!-- GRID DE PRODUCTOS -->
+  <section class="productos-grid" id="productos-grid">
+
+    <div class="producto-card" data-categoria="lacteos">
+      <div class="producto-imagen">🧀</div>
+      <div class="producto-info">
+        <span class="producto-categoria">Lácteos</span>
+        <h3>Queso Campesino</h3>
+        <p class="producto-marca">Marca: Colanta</p>
+        <p class="producto-descripcion">Queso fresco ideal para consumo diario y cocina.</p>
+        <p class="producto-precio">$ 12.000</p>
+        <span class="producto-stock disponible">En stock</span>
+        <a href="producto.html" class="btn">Ver detalle</a>
+      </div>
+    </div>
+
+    <div class="producto-card" data-categoria="embutidos">
+      <div class="producto-imagen">🥩</div>
+      <div class="producto-info">
+        <span class="producto-categoria">Embutidos</span>
+        <h3>Salchichón Cervecero</h3>
+        <p class="producto-marca">Marca: Zenú</p>
+        <p class="producto-descripcion">Salchichón tradicional de alta calidad.</p>
+        <p class="producto-precio">$ 8.500</p>
+        <span class="producto-stock disponible">En stock</span>
+        <a href="producto.html" class="btn">Ver detalle</a>
+      </div>
+    </div>
+
+    <div class="producto-card" data-categoria="salsas">
+      <div class="producto-imagen">🍯</div>
+      <div class="producto-info">
+        <span class="producto-categoria">Salsas</span>
+        <h3>Salsa de Tomate</h3>
+        <p class="producto-marca">Marca: Fruco</p>
+        <p class="producto-descripcion">Salsa de tomate para uso comercial y doméstico.</p>
+        <p class="producto-precio">$ 5.000</p>
+        <span class="producto-stock disponible">En stock</span>
+        <a href="producto.html" class="btn">Ver detalle</a>
+      </div>
+    </div>
+
+    <div class="producto-card" data-categoria="dulces">
+      <div class="producto-imagen">🍫</div>
+      <div class="producto-info">
+        <span class="producto-categoria">Dulces</span>
+        <h3>Chocolate en Chispas</h3>
+        <p class="producto-marca">Marca: Corona</p>
+        <p class="producto-descripcion">Ideal para repostería y preparaciones dulces.</p>
+        <p class="producto-precio">$ 9.000</p>
+        <span class="producto-stock agotado">Agotado</span>
+        <a href="producto.html" class="btn">Ver detalle</a>
+      </div>
+    </div>
+
+    <div class="producto-card" data-categoria="congelados">
+      <div class="producto-imagen">🧊</div>
+      <div class="producto-info">
+        <span class="producto-categoria">Congelados</span>
+        <h3>Papa Precocida</h3>
+        <p class="producto-marca">Marca: McCain</p>
+        <p class="producto-descripcion">Papa lista para freír, ideal para comidas rápidas.</p>
+        <p class="producto-precio">$ 15.000</p>
+        <span class="producto-stock disponible">En stock</span>
+        <a href="producto.html" class="btn">Ver detalle</a>
+      </div>
+    </div>
+
+    <div class="producto-card" data-categoria="lacteos">
+      <div class="producto-imagen">🥛</div>
+      <div class="producto-info">
+        <span class="producto-categoria">Lácteos</span>
+        <h3>Yogurt Griego Natural</h3>
+        <p class="producto-marca">Marca: Alpina</p>
+        <p class="producto-descripcion">Yogurt griego sin azúcar añadida, alto en proteína.</p>
+        <p class="producto-precio">$ 7.500</p>
+        <span class="producto-stock disponible">En stock</span>
+        <a href="producto.html" class="btn">Ver detalle</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Distrilacteos Las Cabañuelas · Bogotá, Colombia</p>
+    <p>📱 <a href="https://wa.me/57TUNUMERO" target="_blank">WhatsApp</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
