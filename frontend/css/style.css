@@ -192,3 +192,94 @@ footer a {
     padding: 60px 20px;
   }
 }
+/* ===== NOSOTROS ===== */
+.nosotros-seccion {
+  padding: 80px 60px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nosotros-contenido h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.nosotros-contenido p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* ===== VALORES ===== */
+.valores {
+  background-color: #f9f9f9;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.valores h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 40px;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.valor-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.valor-icono {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.valor-card h3 {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.valor-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ===== CLIENTES ===== */
+.clientes {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.clientes h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 40px;
+}
+
+.clientes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cliente-item {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 16px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
