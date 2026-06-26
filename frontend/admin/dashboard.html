@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Distrilacteos Las Cabañuelas</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="dashboard-page">
+
+  <!-- NAVBAR ADMIN -->
+  <nav class="admin-nav">
+    <div class="nav-logo">Las Cabañuelas · Admin</div>
+    <div class="nav-acciones">
+      <a href="../../index.html" target="_blank">Ver sitio</a>
+      <button onclick="cerrarSesion()">Cerrar sesión</button>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <div class="dashboard-contenido">
+
+    <div class="dashboard-header">
+      <h1>Gestión de Productos</h1>
+      <button class="btn-agregar" onclick="abrirModalAgregar()">+ Agregar producto</button>
+    </div>
+
+    <div class="tabla-contenedor">
+      <table class="tabla-productos">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Marca</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Activo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-body">
+          <tr><td colspan="8">Cargando productos...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- MODAL AGREGAR/EDITAR -->
+  <div id="modal" class="modal" style="display:none">
+    <div class="modal-contenido">
+      <h2 id="modal-titulo">Agregar producto</h2>
+
+      <div class="form-grupo">
+        <label>Nombre</label>
+        <input type="text" id="p-nombre" placeholder="Nombre del producto">
+      </div>
+      <div class="form-grupo">
+        <label>Marca</label>
+        <input type="text" id="p-marca" placeholder="Marca">
+      </div>
+      <div class="form-grupo">
+        <label>Descripción</label>
+        <textarea id="p-descripcion" placeholder="Descripción del producto"></textarea>
+      </div>
+      <div class="form-grupo">
+        <label>Precio</label>
+        <input type="number" id="p-precio" placeholder="0">
+      </div>
+      <div class="form-grupo">
+        <label>Stock</label>
+        <input type="number" id="p-stock" placeholder="0">
+      </div>
+      <div class="form-grupo">
+        <label>Categoría</label>
+        <select id="p-categoria"></select>
+      </div>
+      <div class="form-grupo">
+        <label>URL de imagen (opcional)</label>
+        <input type="text" id="p-imagen" placeholder="https://...">
+      </div>
+
+      <div class="modal-acciones">
+        <button class="btn-cancelar" onclick="cerrarModal()">Cancelar</button>
+        <button class="btn-guardar" onclick="guardarProducto()">Guardar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
